@@ -1,0 +1,6 @@
+use_frameworks!
+target 'TPKit_Tests' do
+  pod 'TPKit', :path => '../'
+  
+  
+end
