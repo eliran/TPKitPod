@@ -1,0 +1,23 @@
+{
+  "name": "TPKit",
+  "version": "1.0.0",
+  "summary": "A collection of useful utility classes and extensions (obj-c)",
+  "description": "A collection of useful utility classes and extensions in objective-c",
+  "homepage": "https://github.com/eliran/TPKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Eliran Ben-Ezra": "eliran@threeplay.com"
+  },
+  "source": {
+    "git": "https://github.com/eliran/TPKit.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TPKit/Classes/**/*",
+  "public_header_files": "TPKit/Classes/**/*.h"
+}

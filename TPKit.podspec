@@ -14,10 +14,10 @@ Pod::Spec.new do |s|
 A collection of useful utility classes and extensions in objective-c
                        DESC
 
-  s.homepage         = 'https://github.com/eliran/TPKit'
+  s.homepage         = 'https://github.com/eliran/TPKitPod'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Eliran Ben-Ezra' => 'eliran@threeplay.com' }
-  s.source           = { :git => 'https://github.com/eliran/TPKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/eliran/TPKitPod.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
