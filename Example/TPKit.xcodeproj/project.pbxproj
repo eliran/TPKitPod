@@ -11,7 +11,19 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		B7553C3E1CF4E69C0084A0D1 /* QArrayGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C271CF4E69C0084A0D1 /* QArrayGeneratorTests.m */; };
+		B7553C3F1CF4E69C0084A0D1 /* QHashGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C281CF4E69C0084A0D1 /* QHashGeneratorTests.m */; };
+		B7553C401CF4E69C0084A0D1 /* TPArrayStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C291CF4E69C0084A0D1 /* TPArrayStreamTests.m */; };
+		B7553C421CF4E69C0084A0D1 /* TPDataReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C2B1CF4E69C0084A0D1 /* TPDataReaderTests.m */; };
+		B7553C491CF4E69C0084A0D1 /* TPJSONSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C321CF4E69C0084A0D1 /* TPJSONSerializationTests.m */; };
+		B7553C4A1CF4E69C0084A0D1 /* TPLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C331CF4E69C0084A0D1 /* TPLoggerTests.m */; };
+		B7553C4B1CF4E69C0084A0D1 /* TPRegexDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C341CF4E69C0084A0D1 /* TPRegexDictionaryTests.m */; };
+		B7553C4C1CF4E69C0084A0D1 /* TPSafeFieldExtractingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C351CF4E69C0084A0D1 /* TPSafeFieldExtractingTests.m */; };
+		B7553C501CF4E69C0084A0D1 /* TPXMLAttributeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C391CF4E69C0084A0D1 /* TPXMLAttributeTests.m */; };
+		B7553C511CF4E69C0084A0D1 /* TPXMLElementBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C3A1CF4E69C0084A0D1 /* TPXMLElementBuilderTests.m */; };
+		B7553C521CF4E69C0084A0D1 /* TPXMLElementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C3B1CF4E69C0084A0D1 /* TPXMLElementTests.m */; };
+		B7553C531CF4E69C0084A0D1 /* TPXMLNameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C3C1CF4E69C0084A0D1 /* TPXMLNameTests.m */; };
+		B7553C541CF4E69C0084A0D1 /* TPXMLParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7553C3D1CF4E69C0084A0D1 /* TPXMLParserTests.m */; };
 		DC33014C4E8A799FDB7D0004 /* Pods_TPKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1803859ACC7A63A116532E71 /* Pods_TPKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,10 +38,22 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		835BC343C66B8033DC6BF0C2 /* TPKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TPKit.podspec; path = ../TPKit.podspec; sourceTree = "<group>"; };
 		980DE98E2ACB745632571635 /* Pods-TPKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TPKit_Tests/Pods-TPKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7553C271CF4E69C0084A0D1 /* QArrayGeneratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QArrayGeneratorTests.m; sourceTree = "<group>"; };
+		B7553C281CF4E69C0084A0D1 /* QHashGeneratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHashGeneratorTests.m; sourceTree = "<group>"; };
+		B7553C291CF4E69C0084A0D1 /* TPArrayStreamTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPArrayStreamTests.m; sourceTree = "<group>"; };
+		B7553C2B1CF4E69C0084A0D1 /* TPDataReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDataReaderTests.m; sourceTree = "<group>"; };
+		B7553C321CF4E69C0084A0D1 /* TPJSONSerializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPJSONSerializationTests.m; sourceTree = "<group>"; };
+		B7553C331CF4E69C0084A0D1 /* TPLoggerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLoggerTests.m; sourceTree = "<group>"; };
+		B7553C341CF4E69C0084A0D1 /* TPRegexDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRegexDictionaryTests.m; sourceTree = "<group>"; };
+		B7553C351CF4E69C0084A0D1 /* TPSafeFieldExtractingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSafeFieldExtractingTests.m; sourceTree = "<group>"; };
+		B7553C391CF4E69C0084A0D1 /* TPXMLAttributeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPXMLAttributeTests.m; sourceTree = "<group>"; };
+		B7553C3A1CF4E69C0084A0D1 /* TPXMLElementBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPXMLElementBuilderTests.m; sourceTree = "<group>"; };
+		B7553C3B1CF4E69C0084A0D1 /* TPXMLElementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPXMLElementTests.m; sourceTree = "<group>"; };
+		B7553C3C1CF4E69C0084A0D1 /* TPXMLNameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPXMLNameTests.m; sourceTree = "<group>"; };
+		B7553C3D1CF4E69C0084A0D1 /* TPXMLParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPXMLParserTests.m; sourceTree = "<group>"; };
 		BF8A022FA37BD75FA8315F24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +106,19 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				B7553C271CF4E69C0084A0D1 /* QArrayGeneratorTests.m */,
+				B7553C281CF4E69C0084A0D1 /* QHashGeneratorTests.m */,
+				B7553C291CF4E69C0084A0D1 /* TPArrayStreamTests.m */,
+				B7553C2B1CF4E69C0084A0D1 /* TPDataReaderTests.m */,
+				B7553C321CF4E69C0084A0D1 /* TPJSONSerializationTests.m */,
+				B7553C331CF4E69C0084A0D1 /* TPLoggerTests.m */,
+				B7553C341CF4E69C0084A0D1 /* TPRegexDictionaryTests.m */,
+				B7553C351CF4E69C0084A0D1 /* TPSafeFieldExtractingTests.m */,
+				B7553C391CF4E69C0084A0D1 /* TPXMLAttributeTests.m */,
+				B7553C3A1CF4E69C0084A0D1 /* TPXMLElementBuilderTests.m */,
+				B7553C3B1CF4E69C0084A0D1 /* TPXMLElementTests.m */,
+				B7553C3C1CF4E69C0084A0D1 /* TPXMLNameTests.m */,
+				B7553C3D1CF4E69C0084A0D1 /* TPXMLParserTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -237,7 +273,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				B7553C521CF4E69C0084A0D1 /* TPXMLElementTests.m in Sources */,
+				B7553C4B1CF4E69C0084A0D1 /* TPRegexDictionaryTests.m in Sources */,
+				B7553C4A1CF4E69C0084A0D1 /* TPLoggerTests.m in Sources */,
+				B7553C501CF4E69C0084A0D1 /* TPXMLAttributeTests.m in Sources */,
+				B7553C531CF4E69C0084A0D1 /* TPXMLNameTests.m in Sources */,
+				B7553C3E1CF4E69C0084A0D1 /* QArrayGeneratorTests.m in Sources */,
+				B7553C4C1CF4E69C0084A0D1 /* TPSafeFieldExtractingTests.m in Sources */,
+				B7553C491CF4E69C0084A0D1 /* TPJSONSerializationTests.m in Sources */,
+				B7553C511CF4E69C0084A0D1 /* TPXMLElementBuilderTests.m in Sources */,
+				B7553C401CF4E69C0084A0D1 /* TPArrayStreamTests.m in Sources */,
+				B7553C3F1CF4E69C0084A0D1 /* QHashGeneratorTests.m in Sources */,
+				B7553C541CF4E69C0084A0D1 /* TPXMLParserTests.m in Sources */,
+				B7553C421CF4E69C0084A0D1 /* TPDataReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

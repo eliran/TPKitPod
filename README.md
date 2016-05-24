@@ -1,29 +1,68 @@
 # TPKit
 
-[![CI Status](http://img.shields.io/travis/Eliran Ben-Ezra/TPKit.svg?style=flat)](https://travis-ci.org/Eliran Ben-Ezra/TPKit)
-[![Version](https://img.shields.io/cocoapods/v/TPKit.svg?style=flat)](http://cocoapods.org/pods/TPKit)
-[![License](https://img.shields.io/cocoapods/l/TPKit.svg?style=flat)](http://cocoapods.org/pods/TPKit)
-[![Platform](https://img.shields.io/cocoapods/p/TPKit.svg?style=flat)](http://cocoapods.org/pods/TPKit)
+![](https://travis-ci.org/eliran/TPKit.svg?branch=master)
 
-## Example
+A Collection of useful utility classes and extensions
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Classes
 
-## Requirements
+### TPPromise
 
-## Installation
+TPPromise class uses the promise pattern of appending success & failure handlers to a previous promise and
+let the chain of handlers execute once a result success/failure is triggered on the root promise.
 
-TPKit is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### TPLogger
 
-```ruby
-pod "TPKit"
-```
+TPLogger allows adding logging messages with different logging levels and enable/disable levels through one point.
+In addition, different log reporters can be attached to the logger object, which allows different processing of the log to occur.
 
-## Author
+Usage:
 
-Eliran Ben-Ezra, eliran@threeplay.com
+        [TPLogger log:level message:@"message %@", argument]; // using defaultLogger
+        [loggerObject error:@"error %@", argument]; // using alloc/init object
+        [[TPLogger defaultLogger] attachReporter:uploadLogToServerReporter]
 
-## License
+## Lazy Array/Dictionary
 
-TPKit is available under the MIT license. See the LICENSE file for more info.
+
+
+### QRange
+
+creates a lazy array return a range of integers
+        
+        [QRange integerRangeFrom:10 to:20].lazy
+
+### NSArrayGenerator
+
+creates a lazy array from a NSArray
+
+        [NSArrayGenerator initWithArray:array]
+
+## Extensions
+
+### NSArray & NSDictionary lazy extension
+
+invoking #lazy method on NSArray or NSDictionary return a lazy NSArrayGenerator or NSDictionaryGenerator, respectively
+
+NSArray & NSDictionary are further extended with various method like map, filter, keep, each and reduce.
+These extensions lazify the array/dictionary run the respective method and return a concrete object of array/dictionary with 
+the result.
+
+### NSDictionary safe field extracting
+
+various method to extract fields and return a typed object if field exists and can be converted to the requested type,
+otherwise returns a default value or null.
+
+available method: numberField, arrayField, stringField, dictionaryField, integerField, realField and field
+
+### NSString extension
+
+Return a string with lowercase hex representation of the bytes
+
+        +(NSString *)stringWithHexOfBytes:count:  
+
+Return the range of the string
+
+        -(NSRange)range
+
+
